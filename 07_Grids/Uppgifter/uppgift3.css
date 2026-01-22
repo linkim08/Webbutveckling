@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+#a, #b, #c, #d, #e {
+    background: rgb(35, 43, 127);
+    margin: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 36px;
+    font-family: Arial;
+    border-radius: 4px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "a  b   b"
+        "a  .   c"
+        "d  d   d"
+        ".  e   ."
+    ;
+}
+
+#a {
+    grid-area: a;
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}

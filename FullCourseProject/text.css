@@ -1,0 +1,19 @@
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.creator {
+    color: rgb(101, 101, 101);
+}
+
+.video-description {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    width: 500px;
+}
+
+.author {
+    color: rgb(57, 125, 182);
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j {
+    background-size: cover;
+    height: 110px;
+}
+
+
+body {
+    display: grid;
+    height: 55vh;
+    margin-top: 40px;
+    justify-content: center;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-areas: 
+        "a  b   c"
+        "d  .   e"
+        "f  g   h"
+        "i  txt txt"
+        "j  txt txt"
+    ;
+}
+
+#txt {
+    font-family: "Playwrite DE SAS", cursive;
+    font-size: 28px;
+    grid-area: txt;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 230px;
+}
+
+#a {
+    background-image: url(/07_grids/images/a.jpg);
+    grid-area: a;
+}
+#b {
+    background-image: url(/07_grids/images/b.webp);
+    grid-area: b;
+
+}
+#c {
+    background-image: url(/07_grids/images/c.jpg);
+    grid-area: c;
+    border-top-right-radius: 30px;
+
+}
+#d {
+    background-image: url(/07_grids/images/d.jpg);
+    grid-area: d;
+
+}
+#e {
+    background-image: url(/07_grids/images/e.jpg);
+    grid-area: e;
+
+}
+#f {
+    background-image: url(/07_grids/images/f.jpg);
+    grid-area: f;
+
+}
+#g {
+    background-image: url(/07_grids/images/g.webp);
+    grid-area: g;
+
+}
+#h {
+    background-image: url(/07_grids/images/h.jpg);
+    grid-area: h;
+    border-bottom-right-radius: 30px;
+}
+#i {
+    background-image: url(/07_grids/images/i.jpg);
+    grid-area: i;
+
+}
+#j {
+    background-image: url(/07_grids/images/j.jpg);
+    grid-area: j;
+
+}

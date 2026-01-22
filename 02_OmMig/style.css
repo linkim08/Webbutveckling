@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(186, 232, 252);
+    font-family: Arial;
+}
+
+h1 {
+    color: rgb(3, 77, 104);
+    font-size: 250%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: rgb(10, 119, 159);
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: rgb(48, 55, 57);
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: rgb(48, 55, 57);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.präsentation {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+ol {
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.favoritwebbplats {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(120, 159, 183);
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.favoritwebbplats:hover {
+    opacity: 0.7;
+}
+
+.favoritwebbplats:active {
+    opacity: 0.4;
+}
+
+img {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 40px; 
+    height: 168px; 
+    width: 220px;
+    object-fit: cover;
+    transition: height 0.5s, width 0.5s;
+}
+
+img:hover {
+    height: 245px;
+    width: 320px;
+}
+
+.bildbeskrivning {
+    margin-top: 30px;
+    margin-bottom: 4px;
+    margin-left: 30px;
+}
+
+.present {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.fibonacci {
+    margin-left: 10px;
+    padding: 16px 26px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(120, 159, 183);
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.fibonacci:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background: rgb(255, 204, 0);
+}
+
+header {
+    background: rgb(223, 53, 53);
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-family: 'Biryani';
+    margin: 0;
+    font-size: 26px;
+}
+
+main {
+    padding: 10px;
+    margin: 0 15px 0 15px;
+    background: white;
+}
+
+main, footer {
+    font-family: 'Arial';
+}
+
+@media (min-width: 1200px) {
+    div {
+        display: flex;
+    }
+    
+    div section {
+        flex: 1;
+    }
+}
+
+#pannkakor {
+    display: flex;
+    flex-direction: column;
+}
+
+#pannkakor-bild {
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+div li {
+    margin-bottom: 6px; 
+}
+
+footer {
+    background: rgb(94, 21, 21);
+    margin: 0;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "heat   heat    suspect suspect"
+        "inside rififi  rififi  bankjob"
+    ;
+}
+
+#heat, #suspect, #inside, #rififi, #bankjob {
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    padding: 16px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin: 2px;
+}
+
+#heat {
+    background-image: url(images/heat.jpg);
+    grid-area: heat;
+}
+
+#suspect {
+    background-image: url(images/usualsuspects.jpg);
+    grid-area: suspect;
+}
+
+#inside {
+    background-image: url(images/insideman.jpg);
+    grid-area: inside;
+}
+
+#rififi {
+    background-image: url(images/rififi.jpg);
+    grid-area: rififi;
+}
+
+#bankjob {
+    background-image: url(images/bankjob.jpg);
+    grid-area: bankjob;
+}

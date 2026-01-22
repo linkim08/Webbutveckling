@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    font-family: Arial;
+    margin: 14px;
+    grid-template-columns: 75% 25%;
+    gap: 20px;
+}
+
+aside, article {
+    border: 1px solid rgb(224, 224, 224);
+    padding: 20px;
+}
+
+.main-section {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+        "moon       moon        man         man-txt         man-txt"
+        "moon       moon        napoleon    napoleon-txt    napoleon-txt"
+        "moon-txt   moon-txt    pyramids    pyramids-txt    pyramids-txt"
+        "moon-txt   moon-txt    boxer       boxer-txt       boxer-txt"
+    ;
+}
+
+header {
+    border-bottom: 1px solid rgb(172, 172, 172);
+    margin-bottom: 34px;
+}
+
+h1 {
+    color: rgb(134, 18, 18);
+    letter-spacing: -3px;
+    margin-top: 40px;
+}
+
+h2 {
+    letter-spacing: -1px;
+}
+
+h3 {
+    letter-spacing: 0px;
+}
+
+h1, h2, h3, ul {
+    text-transform: uppercase;
+}
+
+span {
+    color: rgb(134, 18, 18);
+    margin-right: 6px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+ul {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#moon-txt, #man-txt, #pyramids-txt, #boxer-txt {
+    align-items: center;
+}
+
+#moon, #man, #napoleon, #pyramids, #boxer {
+    background-size: cover;
+    background-position: center;
+
+}
+
+#moon {
+    background-image: url(bilder/moonlanding.webp);
+    grid-area: moon;
+}
+
+#man {
+    background-image: url(bilder/vitruvian_man_da_vinci.webp);
+    grid-area: man;
+}
+
+#napoleon {
+    background-image: url(bilder/napoleon.webp);
+    grid-area: napoleon;
+}
+
+#pyramids {
+    background-image: url(bilder/pyramids.webp);
+    grid-area: pyramids;
+}
+
+#boxer {
+    background-image: url(bilder/ali.webp);
+    grid-area: boxer;
+}
+
+#moon-txt {
+    grid-area: moon-txt;
+}
+
+#man-txt {
+    grid-area: man-txt;
+}
+
+#napoleon-txt {
+    grid-area: napoleon-txt;
+}
+
+#pyramids-txt {
+    grid-area: pyramids-txt;
+}
+
+#boxer-txt {
+    grid-area: boxer-txt;
+}
+
+@media (max-width: 700px) {
+    body {
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        display: block;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onepage-layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="smoothscroll.js"></script>
+</head>
+<body>
+    <header>
+        <p id="header-logo"><span class="material-symbols-outlined">rocket_launch</span>company & co</p>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#blog">blog</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div id="home-txt">
+            <h1>web<span>development</span></h1>
+            <p id="quote">"If you think math is hard, try web design."<br>– Trish Parr</p>
+        </div>
+    </section>
+    <section id="about">
+        <div id="about-txt">
+            <h1>About <span>lorem</span>ipsum</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quisquam cum tempore esse maiores. Facilis pariatur quos ipsum nam sequi eveniet quam corporis, dignissimos ex! Ratione distinctio molestias labore aperiam dolor fugit! Autem, asperiores obcaecati?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nostrum aperiam dolorum voluptatem itaque. Animi culpa dolorum et, ut beatae assumenda architecto delectus doloribus voluptatum, reiciendis facilis a qui atque, deleniti at eligendi consequuntur? Quidem blanditiis explicabo, esse perferendis vero, eum corporis quae ducimus quam numquam in excepturi, nesciunt veritatis!</p>
+        </div>
+    </section>
+    <section id="blog">
+        <div id="blog-txt">
+            <h1>Lorem <span>ipsum</span>dolor</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi omnis esse eius voluptatem accusantium. Excepturi error tempore dolores officia sint sed cumque delectus? Voluptas eligendi voluptatibus odio reiciendis dicta ex exercitationem, maxime impedit laboriosam est?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam consectetur error dolorum iusto ullam eveniet perferendis. Officiis velit repellendus tempore esse placeat ea labore illum accusamus magni quibusdam iusto nisi, doloribus exercitationem aut culpa voluptatibus eaque at laboriosam quas, dignissimos odio, fuga rem sit! Sit eos necessitatibus excepturi enim earum.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="contact-txt">
+            <h1><span>contact</span> us</h1>
+            <form action="">
+                <label id="fname">Förnamn:</label>
+                <input type="text">
+                <label id="lname">Efternamn:</label>
+                <input type="text">
+                <label id="street">Gatuadress:</label>
+                <input type="text">
+                <label id="ZIPcode">Postnr:</label>
+                <input type="text">
+                <label id="city">Ort:</label>
+                <input type="text">
+                <div class="checkbox-section">
+                    <label for="sex">Jag är:</label>
+                    <div class="checkbox-row">
+                        <label><input type="checkbox">Man</label>
+                        <label><input type="checkbox">Kvinna</label>
+                        <label><input type="checkbox">Alien</label>
+                        <label><input type="checkbox">Annat</label>
+                    </div>
+                </div>
+                <div class="subject-section">
+                    <label for="subject">Jag gillar särskilt:</label>
+                    <select name="subject" id="subjects">
+                        <option value="informatik">Informatik</option>
+                        <option value="fysik">Fysik</option>
+                        <option value="matematik">Matematik</option>
+                        <option value="kemi">Kemi</option>
+                        <option value="webbutveckling">Webbutveckling</option>
+                        <option value="annat">Något annat än dessa fantastiska ämnen</option>
+                    </select>
+                </div>
+                <label id="message">Meddelande:</label>
+                <textarea name="message" id="message-input"></textarea>
+                <div id="but-parent"><button>Skicka</button></div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div id="contact-info">
+            <p id="logo2"><span class="material-symbols-outlined">rocket_launch</span></p>
+            <p id="logo-name">company & co</p>
+            <p id="contact-element">Bergsgatan 20</p>
+            <p id="contact-element">212 22 Malmö</p>
+            <p id="contact-element">Tel: +46 406641660</p>
+            <p id="contact-element">E-mail: info@company.com</p>
+        </div>
+    </footer>
+</body>
+</html>

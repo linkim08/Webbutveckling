@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionering av former</title>
+    <link rel="stylesheet" href="positionering_former.css">
+
+    <style>
+        #röd-kvadrat, #blå-kvadrat, #cirkel {
+            height: 200px;
+            width: 200px;
+        }
+
+        #röd-kvadrat {
+            background: rgb(196, 23, 23);
+            position: relative;
+            top: 100px;
+            left: 500px;
+        }
+
+        #blå-kvadrat {
+            background: rgb(28, 28, 144);
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: -1;
+        }
+
+        #cirkel {
+            background-color: rgb(39, 163, 39);
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="röd-kvadrat">
+        <div id="blå-kvadrat"></div>
+        <div id="cirkel"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+body {    
+    margin: 0;
+    font-family: "Biryani";
+}
+
+header, footer, #home, a {
+    color: #EEE;
+}
+
+header, h1, #logo-name {
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 6px;
+    background-color: #555;        
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+header .material-symbols-outlined {
+    color: rgb(0, 206, 209);
+    vertical-align: middle; 
+    margin-right: 14px;
+    margin-left: 10px;
+}
+
+#header-logo {
+    flex: 1;
+    margin: 0;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+span {
+    color: rgb(0, 206, 209);
+}
+
+#home, #about, #blog {
+    height: 100vh;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    background-image: url(Bilder/pexels-kevin-ku-577585.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+#home-txt {
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+#quote {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0;
+}
+
+#about-txt, #blog-txt, #contact-txt {
+    width: 800px;
+    padding-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+
+#contact {
+    color: black;
+}
+
+.checkbox-section {
+    width: 51%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+input[type=text] {
+    height: 20px;
+    border-width: 1.5px;
+    border-radius: 4px;
+}
+
+input[type=checkbox] { 
+    width: 16px;
+    cursor: pointer;
+} 
+
+#message-input {
+    height: 100px;
+}
+
+#message-input, input[type=text] {
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.checkbox-section, .subject-section {
+    margin-top: 12px;
+}
+
+.subject-section {
+    display: flex;
+    gap: 10px;
+}
+
+#subjects {
+    width: 20%;
+    height: 20px;
+}
+
+#message {
+    width: 51%;
+    margin-top: 12px;
+}
+
+#fname, #lname, #street, #ZIPcode, #city {
+    width: 51%;
+    margin-top: 12px;
+}
+
+button {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    height: 45px;
+    width: 85px;
+    border-radius: 0;
+    background-color: rgb(190, 255, 255);
+    font-size: 24px;
+}
+
+#but-parent {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: #555;
+    padding: 12px;
+}
+
+footer .material-symbols-outlined {
+    font-size: 36px;
+    color: white;
+}
+
+#logo2 {
+    margin-bottom: 14px;
+}
+
+#logo-name {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#contact-element {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-style: italic;
+    font-family: 'Times New Roman';
+}
