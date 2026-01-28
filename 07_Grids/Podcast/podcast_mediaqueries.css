@@ -74,27 +74,27 @@ ul {
 }
 
 #moon {
-    background-image: url(/07_Grids/Podcast/bilder/moonlanding.webp);
+    background-image: url(bilder/moonlanding.webp);
     grid-area: moon;
 }
 
 #man {
-    background-image: url(/07_Grids/Podcast/bilder/vitruvian_man_da_vinci.webp);
+    background-image: url(bilder/vitruvian_man_da_vinci.webp);
     grid-area: man;
 }
 
 #napoleon {
-    background-image: url(/07_Grids/Podcast/bilder/napoleon.webp);
+    background-image: url(bilder/napoleon.webp);
     grid-area: napoleon;
 }
 
 #pyramids {
-    background-image: url(/07_Grids/Podcast/bilder/pyramids.webp);
+    background-image: url(bilder/pyramids.webp);
     grid-area: pyramids;
 }
 
 #boxer {
-    background-image: url(/07_Grids/Podcast/bilder/ali.webp);
+    background-image: url(bilder/ali.webp);
     grid-area: boxer;
 }
 
