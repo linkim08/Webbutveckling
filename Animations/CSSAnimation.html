@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssAnimation.css">
+    <title>CSS Animationer</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>CSS Animationer</h1>
+            <h2>Transitions & Keyframes - grunderna</h2>
+        </header>
+
+        <section id="section1">
+            <h3>Vad är CSS-animationer?</h3>
+            <p>CSS-animationer används för att skapa rörelse. och förändringar i egenskaper hos element. Med dessa animationer kan man exempelvis ändra färg, storlek eller position på element.</p>
+            <p>Det finns två huvudsakliga metoder för att animera med CSS: <strong>transitions</strong> och <strong>animations med @keyframes</strong>. De fungerar på olika sätt och används i olika situationer. Nedan följer förklaringar till båda koncepten med exempel.</p>
+        </section>
+
+        <section id="section2">
+            <h3>CSS Transitions</h3>
+            <p>En CSS transition är som en mjuk övergång mellan två tillstånd då de låter dig ändra egenskapsvärde smidigt under en given tidsperiod. Transitions kräver en utlösare, oftast en tillståndsändring som <code>:hover</code>.</p>
+            <p>Håll muspekaren över elementet nedan för att se en fin CSS-övergångseffekt:</p>
+            <div id="demo-box">CSS</div>
+            <h4>Förklaring med hjälp av exemplet ovan</h4>
+            <p>Först defineras det startillstånd elementet ska ha och sedan vilka CSS-egenskaper som du vill lägga till en övergång till inklusive dess varaktighet. I själva utlösaren defineras de slutvärden elementet ska ha.</p>
+            <pre>
+                <code>
+    #demo-box {
+        height: 80px;
+        width: 80px;
+        background-color: red;
+
+        transition: 
+            transform 1s,
+            background-color 1s;
+    }
+
+    #demo-box:hover {
+        transform: rotate(180deg);
+        background-color: blue;
+    }
+                </code>
+            </pre>
+            <p>Först defineras de startillstånd elementet ska ha, det vill säga hur elementet beter sig utan en utlösare. I den andra delen av <code>#demo-box</code> används egenskapen <code>transition</code> för att bestämma när övergångseffektern kommer att starta, i detta fall då bakgrundsfärgen eller rotationsvinkeln förändras.</p>
+            <p><code>#demo-box:hover</code> fungerar som en utlösare, det vill säga när muspekaren hålls över elementet kommer de nya egenskapern att gälla för elementet. Då kommer övergången från den övre biten kod utföras. Observera att när markören flyttas ut ur elementet, kommer den elementet gradvis återgå till sin ursprungliga stil.</p>
+        </section>
+
+        <section id="section3">
+            <h3>CSS Animations & @keyframes</h3>
+            <p>En animation låter ett element gradvis ändras från en stil till en annan. För att använda CSS-animering måste du ange några nyckelbilder för animationen. Nyckelbilder innehåller vilka stilar elementet kommer att ha vid vissa tidpunkter.</p>
+            <div id="animation-area">
+                <div id="demo-circle">CSS</div>
+            </div>
+            <h4>Förklaring med hjälp av exemplet ovan</h4>
+            <pre>
+                <code>
+    @keyframes roteraOchFärg {
+        0% {
+            left: 0;
+            transform: rotate(0deg);
+            background-color: brown;
+        }
+        50% {
+            background-color: orange;
+        }
+        100% {
+            left: calc(100% - 100px);
+            transform: rotate(360deg);
+            background-color: darkgreen;
+        }
+    }
+
+    #demo-circle {
+        height: 80px;
+        width: 80px;
+        background-color: brown;
+        animation: roteraOchFärg 5s infinite;
+    }
+                </code>
+            </pre>
+            <p>Med <code>@keyframes</code> kan du definera flera steg i en animation, till exempel från 0 % till 100 % och bestämma hur elementet ska förändras över tid. I detta fall styr <code>left</code>, <code>transform</code> och <code>background-color</code> hur elementet ska bete sig. Med egenskapen <code>animation</code> binder man animationen <code>roteraOchFärg</code> till <code>#demo-circle</code>. Animationen tar fem sekunder och fortsätter oändligt med hjälp av nyckelordet <code>infinite</code>.</p>
+        </section>
+
+        <section id="section4">
+            <h3>Transition vs. Animation</h3>
+            <p>Även om transitions och animations båda skapar rörelse, används de i olika situationer.</p>
+            <table>
+                <tr>
+                    <td>Transition</td><td>Animation</td>
+                </tr>
+                <tr>
+                    <td>Kan ej loopas</td><td>Inga problem med looping</td>
+                </tr>
+                <tr>
+                    <td>Kräver en utlösare</td><td>Har precis börjat, behöver ingen triggerkälla</td>
+                </tr>
+                <tr>
+                    <td>Animerar ett objekt från en punkt till en annan</td><td>Låter dig definera nyckelbilder som varierar från ett tillstånd till ett annat med olika egenskaper</td>
+                </tr>
+                <tr>
+                    <td>Passar bra för knappar och menyer</td><td>Används för mer komplexa rörelser</td>
+                </tr>
+                <tr>
+                    <td><img src="Bilder/transition.png" alt=""></td><td><img src="Bilder/animation.png" alt=""></td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>Lina Bertelmann</p>
+            <p>Webbutveckling 1</p>
+            <p><a href="/index.html">Länk till projektöversikt</a></p>
+        </footer>
+    </main>
+</body>
+</html>
