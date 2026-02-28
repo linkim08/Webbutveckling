@@ -46,6 +46,11 @@ code {
     font-family: 'Courier New', Courier, monospace;
 }
 
+pre {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
 #demo-box {
     height: 80px;
     width: 80px;
